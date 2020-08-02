@@ -12,6 +12,7 @@ public class Message {
     private String time;
 
 
+    public Message(){}
     public Message(String message, Message lastMessage) {
         checkTime(message);
     }
@@ -65,4 +66,24 @@ public class Message {
         return time;
     }
     public Date getDate(){return date; }
+
+    public String getDay(){
+        return date.toString();
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setPerson(String person) {
+        this.person = person;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
 }
